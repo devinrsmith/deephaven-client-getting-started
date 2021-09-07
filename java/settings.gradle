@@ -1,0 +1,4 @@
+rootProject.name = 'Deephaven Getting Started'
+
+include('send-script')
+include('simple-query')

@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Necessary
+    implementation 'io.deephaven:deephaven-client-flight:0.4.1'
+
+    // Optional, aids in constructing the session
+    implementation 'io.deephaven:deephaven-client-flight-dagger:0.4.1'
+
+    implementation 'org.slf4j:slf4j-simple:1.7.32'
+}
+
+application {
+    mainClass = 'io.deephaven.examples.SimpleQuery'
+}
